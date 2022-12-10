@@ -44,6 +44,8 @@
   .inicio_componente_boton:hover {
     opacity: 1;
     background: #193f6d;
+    color: #fff;
+    font-family: 'Libre Baskerville', serif;
   }
   
   img {

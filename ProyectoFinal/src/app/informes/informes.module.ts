@@ -8,6 +8,8 @@ import { InformethreeComponent } from './informethree/informethree.component';
 import { InformefourComponent } from './informefour/informefour.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { InformefiveComponent } from './informefive/informefive.component';
 
 
 @NgModule({
@@ -16,13 +18,15 @@ import { MatMenuModule } from '@angular/material/menu';
     InformeoneComponent,
     InformetwoComponent,
     InformethreeComponent,
-    InformefourComponent
+    InformefourComponent,
+    InformefiveComponent
   ],
   imports: [
     CommonModule,
     InformesRoutingModule,
     MatMenuModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSidenavModule
   ]
 })
 export class InformesModule { }

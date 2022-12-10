@@ -6,6 +6,7 @@ import { InformeoneComponent } from './informeone/informeone.component';
 import { InformetwoComponent } from './informetwo/informetwo.component';
 import { InformethreeComponent } from './informethree/informethree.component';
 import { InformefourComponent } from './informefour/informefour.component';
+import { InformefiveComponent } from './informefive/informefive.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
       {
         path: 'informe4',
         component: InformefourComponent
+      },
+      {
+        path: 'informe5',
+        component: InformefiveComponent
       }
     ]
   }

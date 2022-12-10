@@ -34,9 +34,17 @@
     width: 100%;
     height: 100%;
     border: none;
+    font-family: 'Libre Baskerville', serif;
+    font-size:large;
 }
 
 .botones:hover{
+    background: #2AE5E8;
+    color: #fff;
+}
+
+
+.botones:focus{
     background: #2AE5E8;
     color: #fff;
 }

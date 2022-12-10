@@ -7,13 +7,14 @@ import { UserRegisterComponent } from './user-register/user-register.component';
 
 const routes: Routes = [
   {
-    path: '', 
+    path: 'inicioFuncionario', 
     component: IniciofuncionarioComponent,
-    /*children: [
+   children: [
       {
-        path: '**', redirectTo: 'inicioFunc'
+        path: 'userRegister',
+        component: UserRegisterComponent
       }
-    ]*/
+    ]
   }
 ]
 
