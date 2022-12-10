@@ -6,17 +6,12 @@ import { VotarComponent } from './votar/votar.component';
 
 const routes: Routes = [
   {
-    path: '', 
-    component: InicioComponent,
-    children: [
-        {
-            path: 'votar',
-            component: VotarComponent
-        },
-      {
-        path: '**', pathMatch: 'full', redirectTo: 'inicio' 
-      }
-    ]
+    path: 'inicioVotante', 
+    component: InicioComponent
+  },
+  {
+    path: 'votaciones',
+    component: VotarComponent
   }
 ]
 

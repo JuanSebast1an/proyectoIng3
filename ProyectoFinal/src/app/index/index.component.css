@@ -37,7 +37,7 @@
     background-color: #cbf3ec;
     border-radius: 300px;
     border: 5px solid; 
-    border-color: white;
+    border-color: black;
     font-family: "Acme", sans-serif;
   }
   
@@ -46,6 +46,7 @@
     background: #193f6d;
     color: #fff;
     font-family: 'Libre Baskerville', serif;
+    border-color: #fff;
   }
   
   img {
@@ -55,7 +56,7 @@
     height: 100%;
     border-radius: 300px;
     border: 5px solid; 
-    color: white;
+    color: black;
   }
   
   /*img.imagen2{
