@@ -3,12 +3,12 @@ import { ChildrenOutletContexts, RouterModule, Routes } from '@angular/router';
 import { FormularioComponent } from './formulario/formulario.component';
 const routes: Routes = [
   {
-    path: '', component: FormularioComponent
+    path: 'login', component: FormularioComponent
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class LoginRoutingModule { }

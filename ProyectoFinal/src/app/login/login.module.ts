@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormularioComponent } from './formulario/formulario.component';
+import { LoginRoutingModule } from './login-routing.module';
 
 
 
@@ -9,10 +10,8 @@ import { FormularioComponent } from './formulario/formulario.component';
     FormularioComponent
   ],
   imports: [
-    CommonModule
-  ],
-  exports:[
-    FormularioComponent
+    CommonModule,
+    LoginRoutingModule
   ]
 })
 export class LoginModule { }

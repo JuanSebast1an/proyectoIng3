@@ -11,6 +11,7 @@ export class IndexComponent {
   constructor(private router:Router){}
   
 irLogin():void{
+  console.log("login")
   this.router.navigate(['/auth/login']);
 }
 
