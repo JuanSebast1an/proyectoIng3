@@ -10,7 +10,7 @@ const routes: Routes = [
     component: InicioinformesComponent,
    children: [
       {
-        path: 'inicioInformes/informe1',
+        path: 'informe1',
         component: InformeoneComponent
       }
     ]
