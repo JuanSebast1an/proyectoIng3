@@ -2,16 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { InicioinformesComponent } from './inicioinformes/inicioinformes.component';
+import { InformeoneComponent } from './informeone/informeone.component';
 
 const routes: Routes = [
   {
     path: 'inicioInformes', 
     component: InicioinformesComponent,
-   /* children: [
+   children: [
       {
-        path: '**', redirectTo: 'panel'
+        path: 'inicioInformes/informe1',
+        component: InformeoneComponent
       }
-    ]*/
+    ]
   }
 ]
 
