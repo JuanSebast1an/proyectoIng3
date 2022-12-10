@@ -4,12 +4,13 @@ h1 {
     font-family: 'Libre Baskerville', serif;
 }
 
-.registerc{
+.gestionar{
     padding: 2%;
     background: #193f6d;
     align-items: center;
     display: flex;
     justify-content: center;
+    height: 100%;
 }
 
 .custom-form {

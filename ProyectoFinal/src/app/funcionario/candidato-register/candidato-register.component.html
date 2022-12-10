@@ -1,1 +1,50 @@
-<p>candidato-register works!</p>
+<div class="registerc">
+    <form class="custom-form" method="post">
+      <h1>Registro de candidatos</h1>
+      <input
+        type="cedula"
+        [(ngModel)]="cedula"
+        name="cedula"
+        placeholder="Cedula"
+        required="required"
+      />
+      <input
+        type="candidato"
+        [(ngModel)]="candidato"
+        name="candidato"
+        placeholder="Candidato"
+        required="required"
+      />
+      <input
+        type="partidopolitico"
+        [(ngModel)]="partidopolitico"
+        name="partidopolitico"
+        placeholder="Partido Politico"
+        required="required"
+      />
+     
+      <input
+        type="descripcion"
+        [(ngModel)]="descripcion"
+        name="descripcion"
+        placeholder="Descripcion"
+        required="required"
+      />
+
+      <input
+        type="file"
+        [(ngModel)]="eslogan"
+        name="eslogan"
+        placeholder="Eslogan"
+        required="required"
+      />
+      <input
+        type="intensiones"
+        [(ngModel)]="intensiones"
+        name="intensiones"
+        placeholder="Intensiones"
+        required="required"
+      />
+      <button type="submit" (click)="registerc()">Registrar</button>
+    </form>
+  </div>
