@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormularioComponent } from './formulario/formulario.component';
 import { LoginRoutingModule } from './login-routing.module';
-
+import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
 
 
 @NgModule({
@@ -11,7 +11,8 @@ import { LoginRoutingModule } from './login-routing.module';
   ],
   imports: [
     CommonModule,
-    LoginRoutingModule
+    LoginRoutingModule,
+    FormsModule
   ],
   exports:[
     FormularioComponent

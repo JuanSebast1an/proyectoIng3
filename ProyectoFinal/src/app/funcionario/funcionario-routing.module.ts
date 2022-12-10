@@ -8,13 +8,11 @@ import { UserRegisterComponent } from './user-register/user-register.component';
 const routes: Routes = [
   {
     path: 'inicioFuncionario', 
-    component: IniciofuncionarioComponent,
-   children: [
-      {
-        path: 'userRegister',
-        component: UserRegisterComponent
-      }
-    ]
+    component: IniciofuncionarioComponent
+  },
+  {
+    path: 'registrarUsuario',
+    component: UserRegisterComponent
   }
 ]
 
