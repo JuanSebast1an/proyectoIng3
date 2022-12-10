@@ -6,7 +6,8 @@ import { InformeoneComponent } from './informeone/informeone.component';
 import { InformetwoComponent } from './informetwo/informetwo.component';
 import { InformethreeComponent } from './informethree/informethree.component';
 import { InformefourComponent } from './informefour/informefour.component';
-
+import { MatButtonModule } from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu';
 
 
 @NgModule({
@@ -19,8 +20,9 @@ import { InformefourComponent } from './informefour/informefour.component';
   ],
   imports: [
     CommonModule,
-    InformesRoutingModule
-    
+    InformesRoutingModule,
+    MatMenuModule,
+    MatButtonModule
   ]
 })
 export class InformesModule { }

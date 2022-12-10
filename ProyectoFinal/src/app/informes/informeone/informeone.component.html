@@ -1,1 +1,85 @@
-<p>informeone works!</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id Candidato</th>
+      <th scope="col">Nombre Candidato</th>
+      <th scope="col">
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+      </th>
+      <th scope="col"><button mat-button [matMenuTriggerFor]="periodicos">Departamentos</button>
+
+        <mat-menu #periodicos="matMenu">
+          <button mat-menu-item [matMenuTriggerFor]="andina">Andina</button>
+          <button mat-menu-item [matMenuTriggerFor]="amazonia">Amazonia</button>
+          <button mat-menu-item [matMenuTriggerFor]="caribe">Caribe</button>
+          <button mat-menu-item [matMenuTriggerFor]="insular">Insular</button>
+          <button mat-menu-item [matMenuTriggerFor]="orinoquia">Orinoqouia</button>
+          <button mat-menu-item [matMenuTriggerFor]="pacifica">Pacifica</button>
+        </mat-menu>
+        
+        <mat-menu #andina="matMenu">
+          <a mat-menu-item href="https://www.lanacion.com.ar">La Nación</a>
+          <a mat-menu-item href="https://www.clarin.com">Clarin</a>
+          <a mat-menu-item href="https://www.ambito.com">Ambito</a>
+          <a mat-menu-item href="https://www.infobae.com">Infobae</a>
+          <a mat-menu-item href="https://www.cronista.com">Cronista</a>
+        </mat-menu>
+        
+        <mat-menu #amazonia="matMenu">
+          <a mat-menu-item href="https://www.emol.com">El Mercurio</a>
+          <a mat-menu-item href="https://www.latercera.com">La Tercera</a>
+          <a mat-menu-item href="https://www.lacuarta.com">La Cuarta</a>
+        </mat-menu>
+
+        <mat-menu #caribe="matMenu">
+            <a mat-menu-item href="https://www.emol.com">El Mercurio</a>
+            <a mat-menu-item href="https://www.latercera.com">La Tercera</a>
+            <a mat-menu-item href="https://www.lacuarta.com">La Cuarta</a>
+          </mat-menu>
+
+          <mat-menu #orinoquia="matMenu">
+            <a mat-menu-item href="https://www.emol.com">El Mercurio</a>
+            <a mat-menu-item href="https://www.latercera.com">La Tercera</a>
+            <a mat-menu-item href="https://www.lacuarta.com">La Cuarta</a>
+          </mat-menu>
+
+          <mat-menu #pacifica="matMenu">
+            <a mat-menu-item href="https://www.emol.com">El Mercurio</a>
+            <a mat-menu-item href="https://www.latercera.com">La Tercera</a>
+            <a mat-menu-item href="https://www.lacuarta.com">La Cuarta</a>
+          </mat-menu>
+
+          <mat-menu #insular="matMenu">
+            <a mat-menu-item href="https://www.emol.com">El Mercurio</a>
+            <a mat-menu-item href="https://www.latercera.com">La Tercera</a>
+            <a mat-menu-item href="https://www.lacuarta.com">La Cuarta</a>
+          </mat-menu>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
