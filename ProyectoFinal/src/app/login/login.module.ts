@@ -12,6 +12,9 @@ import { LoginRoutingModule } from './login-routing.module';
   imports: [
     CommonModule,
     LoginRoutingModule
+  ],
+  exports:[
+    FormularioComponent
   ]
 })
 export class LoginModule { }

@@ -16,7 +16,7 @@ irLogin():void{
 }
 
 irInformes():void{
-this.router.navigate(['informes']);
+this.router.navigate(['/informes/inicioInformes']);
 }
 
 }

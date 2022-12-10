@@ -5,13 +5,13 @@ import { InicioinformesComponent } from './inicioinformes/inicioinformes.compone
 
 const routes: Routes = [
   {
-    path: '', 
+    path: 'inicioInformes', 
     component: InicioinformesComponent,
-    children: [
+   /* children: [
       {
         path: '**', redirectTo: 'panel'
       }
-    ]
+    ]*/
   }
 ]
 

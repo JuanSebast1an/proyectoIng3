@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'votante',
     loadChildren: () => import('./votante/votante.module').then(m => m.VotanteModule)
   },
+  {
+    path: 'informes',
+    loadChildren: () => import('./informes/informes.module').then(m => m.InformesModule)
+  },
   { path: '**', redirectTo: '' }
 ];
 
