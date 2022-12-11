@@ -4,18 +4,21 @@ import { VotarComponent } from './votar/votar.component';
 import { MunicipioCambioComponent } from './municipio-cambio/municipio-cambio.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { VotanteRoutingModule } from './votante-routing.module';
-
+import { ModalComponent } from './votar/modal/modal.component';
+import { FormsModule } from "@angular/forms";
 
 
 @NgModule({
   declarations: [
     VotarComponent,
     MunicipioCambioComponent,
-    InicioComponent
+    InicioComponent,
+    ModalComponent
   ],
   imports: [
     CommonModule,
-    VotanteRoutingModule
+    VotanteRoutingModule,
+    FormsModule
   ],
   exports: [
     InicioComponent,

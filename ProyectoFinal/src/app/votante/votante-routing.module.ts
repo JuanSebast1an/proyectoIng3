@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { InicioComponent } from './inicio/inicio.component';
 import { VotarComponent } from './votar/votar.component';
+import { MunicipioCambioComponent } from './municipio-cambio/municipio-cambio.component';
 
 const routes: Routes = [
   {
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path: 'votaciones',
     component: VotarComponent
+  },
+  {
+    path: 'perfil',
+    component: MunicipioCambioComponent
   }
 ]
 

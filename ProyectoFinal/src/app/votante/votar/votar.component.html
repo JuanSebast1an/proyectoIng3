@@ -1,31 +1,25 @@
 <div class="contenedorPrincipal">
     <div class="contenedorSecundario">
         <div class="opciones">
-            <button>Voto Blanco</button>
+            <img src="../../../assets/votoBlanco.png" alt="">
+            <button>Votar</button>
+        </div>
+        <div class="opciones opcionCandidato">
+            <a (click)="openModal()"><img src="../../../assets/candidato1.png" alt=""></a>
+            <button>Candidato 1 ({{partido1}})</button>
+            <div *ngIf="modalSwitch == true">
+                <app-modal></app-modal>
+            </div>
         </div>
         <div class="opciones">
-            <button>Candidato 1</button>
+            <img src="../../../assets/candidato2.png" alt="">
+            <button>Candidato 2 (Partido 2)</button>
         </div>
         <div class="opciones">
-            <button>Candidato 2</button>
+            <img src="../../../assets/candidato3.png" alt="">
+            <button>Candidato 3 (Partido 3)</button>
         </div>
-        <div class="opciones">
-            <button>Candidato 3</button>
-        </div>
-        <div class="opciones">
-            <button>Candidato 4</button>
-        </div>
-        <div class="opciones">
-            <button>Candidato 5</button>
-        </div>
-        <div class="opciones">
-            <button>Candidato 6</button>
-        </div>
-        <div class="opciones">
-            <button>Candidato 7</button>
-        </div>
-        <div class="opciones">
-            <button>Candidato 8</button>
+        <div class="contenedorTerciario">
+            <button class="volver" routerLink="../inicioVotante">Volver</button>
         </div>
     </div>
-</div>
