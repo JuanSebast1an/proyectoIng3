@@ -6,12 +6,9 @@ import { VotarComponent } from './votar/votar.component';
 import { MunicipioCambioComponent } from './municipio-cambio/municipio-cambio.component';
 
 const routes: Routes = [
+ 
   {
-    path: 'inicioVotante', 
-    component: InicioComponent
-  },
-  {
-    path: 'votaciones',
+    path: 'candidatos',
     component: VotarComponent
   },
   {

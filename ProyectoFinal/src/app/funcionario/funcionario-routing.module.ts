@@ -8,7 +8,7 @@ import { GestionarvotacionesComponent } from './gestionarvotaciones/gestionarvot
 
 const routes: Routes = [
   {
-    path: 'inicioFuncionario', 
+    path: '', 
     component: IniciofuncionarioComponent
   },
   {

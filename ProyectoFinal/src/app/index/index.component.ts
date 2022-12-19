@@ -14,7 +14,9 @@ irLogin():void{
   console.log("login")
   this.router.navigate(['/auth/login']);
 }
-
+irfuncionario():void{
+  this.router.navigate(['/funcionario'])
+}
 irInformes():void{
 this.router.navigate(['/informes/inicioInformes']);
 }

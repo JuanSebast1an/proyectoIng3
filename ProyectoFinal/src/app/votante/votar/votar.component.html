@@ -1,25 +1,18 @@
-<div class="contenedorPrincipal">
+<div class="total"><div class="contenedorPrincipal">
     <div class="contenedorSecundario">
         <div class="opciones">
             <img src="../../../assets/votoBlanco.png" alt="">
             <button>Votar</button>
         </div>
-        <div class="opciones opcionCandidato">
+        <div *ngFor="let candidato of candidatos" class="opciones opcionCandidato">
             <a (click)="openModal()"><img src="../../../assets/candidato1.png" alt=""></a>
-            <button>Candidato 1 ({{partido1}})</button>
+            <button>{{candidato.partidoPolitico}}</button>
             <div *ngIf="modalSwitch == true">
-                <app-modal></app-modal>
+                <app-modal [candidato]="candidato"></app-modal>
             </div>
-        </div>
-        <div class="opciones">
-            <img src="../../../assets/candidato2.png" alt="">
-            <button>Candidato 2 (Partido 2)</button>
-        </div>
-        <div class="opciones">
-            <img src="../../../assets/candidato3.png" alt="">
-            <button>Candidato 3 (Partido 3)</button>
         </div>
         <div class="contenedorTerciario">
             <button class="volver" routerLink="../inicioVotante">Volver</button>
         </div>
     </div>
+</div>

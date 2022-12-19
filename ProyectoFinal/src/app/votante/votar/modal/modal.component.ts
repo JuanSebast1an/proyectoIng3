@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { candidato } from 'src/app/funcionario/candidato-register/canditato';
+import { Component, Input } from '@angular/core';
 import { SwitchService } from '../services/switch.service';
 
 @Component({
@@ -7,6 +8,7 @@ import { SwitchService } from '../services/switch.service';
   styleUrls: ['./modal.component.css']
 })
 export class ModalComponent {
+  @Input() candidato:candidato;
 
   constructor(private modalSS: SwitchService){}
 

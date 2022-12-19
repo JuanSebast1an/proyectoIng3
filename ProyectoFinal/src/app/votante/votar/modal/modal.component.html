@@ -1,13 +1,14 @@
-<div class="modal1">
-    <div class="modal_body">
-        <div class="descripcion">
-            <h1>Sebastian Duran</h1>
-            <h3>Partido Conservador</h3>
-            <p>es una persona integra de intereses comunes con la comunidad,
-                y con con una gran afinidad al medio ambiente</p>
+<div class="total">
+    <div class="modal1">
+        <div class="modal_body">
+            <div class="descripcion">
+                <h1>{{candidato.nombre}}</h1>
+                <h3>{{candidato.partidoPolitico}}</h3>
+                <p>{{candidato.propuesta}}</p>
+            </div>
+            <div>
+                <button (click)="closeModal()">X</button>
+            </div>
         </div>
-        <div>
-            <button (click)="closeModal()">X</button>
-        </div>
-    </div>
-</div> 
+    </div> 
+</div>

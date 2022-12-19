@@ -2,12 +2,12 @@
 <div class="inicio">
   <div class="inicio_1">
     <div class="botones">
-      <button class="btn btn-warning boton1 primero" routerLink="../registrarUsuario">
+      <button class="btn btn-warning boton1 primero" [routerLink]="['/funcionario/registrarUsuario']">
         Registrar usuario
       </button>
     </div>
     <div  class="botones">
-      <button class="btn btn-primary boton1"routerLink="../registrarCandidato" >Registrar candidato</button>
+      <button class="btn btn-primary boton1"[routerLink]="['/funcionario/registrarCandidato']" >Registrar candidato</button>
     </div>
     <div class="botones">
       <button class="btn btn-danger boton1" routerLink="../gestionarVotaciones" >Gestionar Votaciones</button>
