@@ -1,21 +1,19 @@
 <div class="login">
-  <form class="custom-form" method="post">
+  <form class="custom-form" [formGroup]="usuarioForm" method="post">
     <h1>Inicia Sesión</h1>
     <input
       type="email"
-      [(ngModel)]="email"
-      name="email"
+      formControlName="correo"
       placeholder="Email"
       required="required"
     />
     <input
       type="password"
-      [(ngModel)]="password"
-      name="password"
+      formControlName="pass"
       placeholder="Contraseña"
       required="required"
     />
-    <button [routerLink]="['/votante/candidatos']" type="submit" (click)="login()">Iniciar Sesión</button>
+    <button  type="submit" (click)="login()">Iniciar Sesión</button>
 
     <a routerLink="../recuperarContraseña">Recuperar constraseña</a>
 

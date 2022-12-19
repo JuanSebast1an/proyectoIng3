@@ -11,5 +11,6 @@ export interface usuario{
     correo: string,
     pass: string,
     phone: number,
-    voto: boolean
+    voto: boolean,
+    roles: string
 }

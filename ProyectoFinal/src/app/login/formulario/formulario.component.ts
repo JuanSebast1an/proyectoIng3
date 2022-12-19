@@ -1,4 +1,7 @@
+import { Router } from '@angular/router';
+import { LoginserviceService } from './../loginservice.service';
 import { Component } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-formulario',
@@ -6,13 +9,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./formulario.component.css']
 })
 export class FormularioComponent {
-  email: string= "";
-  password: string="";
+  usuarioForm: FormGroup = this.fb.group({
+    correo: [""],
+    pass: [""]
+  })
 
-  constructor() {}
+  constructor(private loginservice:LoginserviceService, private fb: FormBuilder, private router:Router) {}
 
   login() {
-    console.log(this.email);
-    console.log(this.password);
+    this.loginservice.getOneUser(this.usuarioForm.value).subscribe(res => {
+      
+
+        if(res.roles === "ROLE_USER"){
+        this.router.navigate(['/votante/candidatos']);
+
+      }else{
+
+        this.router.navigate(['/funcionario'])
+      }
+    
+    })
   }
 }
